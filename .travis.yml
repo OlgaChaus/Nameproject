@@ -1,0 +1,4 @@
+language: java
+sudo: false
+cd project1
+script: mvn clean verify
