@@ -61,7 +61,6 @@ public class GreetingsTest {
      */
     @Test
     public void testViewString() {
-        System.out.println("viewString");
         String keyTimeOfDay = "morning";
         Greetings instance = new Greetings();
         String expResult = "Доброе утро";
