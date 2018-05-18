@@ -3,6 +3,8 @@ import org.junit.Test;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 import static org.junit.Assert.assertEquals;
 
@@ -63,11 +65,17 @@ public class GreetingsTest {
     public void testViewString() {
         String keyTimeOfDay = "morning";
         Greetings instance = new Greetings();
-        String expResult = "Доброе утро";
+        Locale currentLocale = Locale.getDefault();
         String result = instance.viewString(keyTimeOfDay);
+        String expResult = "Good morning";
+        if (currentLocale.equals(new Locale("ru", "RU")))
+            expResult = "Доброе утро";
+        else if (currentLocale.equals(new Locale("uk", "UA")))
+            expResult = "Доброго ранку";
+
         assertEquals(expResult, result);
-
     }
-
 }
+
+
 
