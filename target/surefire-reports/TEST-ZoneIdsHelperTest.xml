@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ZoneIdsHelperTest" time="0.024" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ZoneIdsHelperTest" time="0.002" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -15,10 +15,10 @@
     <property name="user.timezone" value=""/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="os.name" value="Windows 7"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_141\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\836D~1\AppData\Local\Temp\surefire4193630781078213980\surefirebooter6001177073145956174.jar C:\Users\Администратор\AppData\Local\Temp\surefire4193630781078213980 2018-05-18T09-58-01_277-jvmRun1 surefire8736823379585790827tmp surefire_05933053431673596075tmp"/>
+    <property name="sun.java.command" value="C:\Users\836D~1\AppData\Local\Temp\surefire1476867324569716251\surefirebooter7573415806394744967.jar C:\Users\Администратор\AppData\Local\Temp\surefire1476867324569716251 2018-05-18T10-03-41_891-jvmRun1 surefire1949701077459741197tmp surefire_06499767713989013165tmp"/>
     <property name="surefire.test.class.path" value="D:\Документы\Оля\55555555555555\nameproject\target\test-classes;D:\Документы\Оля\55555555555555\nameproject\target\classes;C:\Users\Администратор\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Администратор\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Администратор\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Администратор"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\836D~1\AppData\Local\Temp\surefire4193630781078213980\surefirebooter6001177073145956174.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\836D~1\AppData\Local\Temp\surefire1476867324569716251\surefirebooter7573415806394744967.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_141\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_141\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_141\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_141\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_141\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_141\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_141\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_141\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
@@ -43,7 +43,6 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.0.2\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="localRepository" value="C:\Users\Администратор\.m2\repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\836D~1\AppData\Local\Temp\"/>
@@ -53,7 +52,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_141\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Program Files\maven\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Program Files\Git\cmd;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_141\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Администратор\bin;C:\Program Files\Git\mingw32\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw32\bin;C:\Program Files\Git\usr\bin;C:\Users\Администратор\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Skype\Phone;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Program Files\maven\bin;C:\Program Files\Java\jdk1.8.0_141\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.141-b15"/>
@@ -61,5 +60,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testGetZoneId" classname="ZoneIdsHelperTest" time="0.021"/>
+  <testcase name="testGetZoneId" classname="ZoneIdsHelperTest" time="0.001"/>
 </testsuite>
