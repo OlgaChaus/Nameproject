@@ -5,6 +5,9 @@
     <artifactId>nameproject</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+
+
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -18,11 +21,15 @@
             <version>1.2.17</version>
             </dependency>
     </dependencies>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <args></args>
     </properties>
+
+
 <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -63,7 +70,8 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.2.1</version>
         <configuration>
-          <mainClass>olga.nameproject.App</mainClass>
+          <mainClass>App</mainClass>
+            <commandlineArgs>${args}</commandlineArgs>
         </configuration>
       </plugin>
       </plugins>

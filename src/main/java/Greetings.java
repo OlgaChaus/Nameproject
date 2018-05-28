@@ -34,21 +34,7 @@ public class Greetings {
     }
 
     private ResourceBundle getLocaleResourceBundle(){
-
         Locale defaultLocale = Locale.getDefault();
-        Locale usLocale = new Locale("en", "US");
-        Locale ruLocale = new Locale("ru", "RU");
-        Locale uaLocale = new Locale("uk", "UA");
-
-        if (defaultLocale.equals(usLocale)){
-            return ResourceBundle.getBundle("msg", usLocale);
-        } else if (defaultLocale.equals(ruLocale)){
-            return ResourceBundle.getBundle("msg", ruLocale);
-        }
-        else if (defaultLocale.equals(uaLocale)){
-            return ResourceBundle.getBundle("msg", uaLocale);
-        }
-
         return ResourceBundle.getBundle("msg", defaultLocale);
     }
 }

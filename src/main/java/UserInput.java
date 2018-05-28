@@ -15,49 +15,17 @@ public class UserInput {
         return city;
     }
 
+    public void setCity(String city) {
+        this.city = city;
+    }
+
     public String getTimeZone() {
         return timeZone;
     }
 
-    public void getCityInput(){
-        System.out.println("Enter the city name in English: ");
-        this.city = getUserInput();
-        logger.info ("Receiving data from a user");
+    public void setTimeZone(String timeZone) {
+        this.timeZone = timeZone;
     }
-
-    public void getTimeZoneInput(){
-        System.out.println("Enter the time zone ID (use +02:00 format): ");
-        String userInput = getUserInput();
-        if (userInput != "" && isValidTimeZoneInput(userInput)){
-            this.timeZone = userInput;
-            logger.info ("Receiving data from a user");
-        }
-    }
-
-    private boolean isValidTimeZoneInput(String timeZoneInput){
-        boolean isValid = false;
-        final Pattern pattern = Pattern.compile("^(?:Z|[+-](?:2[0-3]|[01][0-9]):[0-5][0-9])$");
-        if (!pattern.matcher(timeZoneInput).matches()) {
-            logger.info ("strange message...");
-            System.out.println("Wrong Time Zone Input!");
-        }
-        else {
-            isValid = true;
-        }
-
-        return isValid;
-    }
-
-    private String getUserInput(){
-        Scanner in = new Scanner (System.in);
-        String input = in.nextLine();
-        if (input.trim().equalsIgnoreCase("quit")){
-            System.out.println("Bye!");
-            System.exit(0);
-        }
-        return input.trim();
-    }
-
 
     public void proccessInput(){
 
@@ -67,7 +35,6 @@ public class UserInput {
         ZonedDateTime usersDateTime = timeStamp.atZone(ZoneId.of("GMT"));
 
         if (!this.timeZone.equals("")){
-            System.out.println();
             usersDateTime = timeStamp.atZone(ZoneId.of(this.getTimeZone()));
         }
         else{
@@ -81,7 +48,9 @@ public class UserInput {
         System.out.print(greeting.viewString(greeting.getGreeetingDependOntime(usersDateTime))
                 + ", " + this.getCity() + "!" + "\n");
 
-        logger.info ("Displaying the date and time of the user");
+        logger.info ("Displaying the date and time depending on the user's locale");
         System.out.println(usersDateTime);
+
+        logger.info("Displaying the zone ID");
     }
 }
